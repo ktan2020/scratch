@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/fox/Desktop/dev/project/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fox/temp1/SeLion-develop/server/target/SeLion-Grid.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fox/temp1/SeLion-develop/server/target/SeLion-Grid-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fox/temp1/SeLion-develop/client/target/SeLion-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="target/test-classes"/>
+</classpath>
