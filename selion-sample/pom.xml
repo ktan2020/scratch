@@ -10,22 +10,29 @@
   
   <properties>
     <gebVersion>0.10.0</gebVersion>
-    <seleniumVersion>2.43.1</seleniumVersion>
-    <groovyVersion>2.3.6</groovyVersion>
+    <seleniumVersion>2.44</seleniumVersion>
+    <groovyVersion>2.3.8</groovyVersion>
+	<soapuiVersion>4.5.1</soapuiVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   
-  <!-- you need this to pull SeLion SNAPSHOT artifacts from the global repo -->
   <repositories>
-    <repository>
+	<!--<repository>
+        <id>smartbear-sweden-plugin-repository</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
+    </repository>-->
+	<repository>
       <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
   </repositories>
 
-  <!-- you need this to pull SeLion SNAPSHOT plugin artifacts from the global repo -->
   <pluginRepositories>
+	<!--<pluginRepository>
+        <id>smartbear-sweden-plugin-repository</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
+    </pluginRepository>-->
     <pluginRepository>
       <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -33,6 +40,11 @@
   </pluginRepositories>
   
   <dependencies>
+	<!--<dependency>
+      <groupId>eviware</groupId>
+      <artifactId>soapui</artifactId>
+      <version>4.5.1</version>	  
+    </dependency>-->
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
@@ -67,13 +79,7 @@
       <artifactId>geb-spock</artifactId>
       <version>${gebVersion}</version>
       <scope>test</scope>
-    </dependency>
-    <!--<dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-firefox-driver</artifactId>
-      <version>${seleniumVersion}</version>
-      <scope>test</scope>
-    </dependency>-->  
+    </dependency> 
     <dependency>
       <groupId>com.paypal.selion</groupId>
       <artifactId>SeLion</artifactId>
@@ -92,9 +98,6 @@
             <include>**/*Test*.*</include>
           </includes>
           <!--
-          <systemPropertyVariables>
-            <geb.build.reportsDir>target/test-reports/geb</geb.build.reportsDir>
-          </systemPropertyVariables>
           <systemPropertyVariables>
           	<property><name>browser</name><value>*firefox</value></property>
           	<property><name>runLocally</name><value>true</value></property>

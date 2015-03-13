@@ -1,4 +1,4 @@
-package com.eviware.soapui.tools;
+package com.mycompany.test
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -50,6 +50,7 @@ import com.eviware.soapui.support.StringUtils;
 import com.eviware.soapui.support.Tools;
 import com.eviware.soapui.support.types.StringToObjectMap;
 
+import com.eviware.soapui.tools.*
 import com.eviware.soapui.tools.AbstractSoapUIRunner.SoapUIOptions as SoapUIOptions
 
 

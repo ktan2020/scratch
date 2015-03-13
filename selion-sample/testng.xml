@@ -11,7 +11,7 @@
   <test name="SampleTest">
     <classes>
       <class name="com.mycompany.test.DemoGroovyTest"></class>
-      <class name="com.mycompany.test.DemoJavaTest"></class>
+      <!--<class name="com.mycompany.test.DemoJavaTest"></class>-->
     </classes>
   </test>
 </suite>
